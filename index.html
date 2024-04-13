@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Input Fields with Labels</title>
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="custom-header"></header>
+    <div class="outer-container">
+        <div class="container">
+            <form id="tax-form">
+                <div>
+                    <label for="field1">Enter Gross Salary Income:</label>
+                    <a class="abc" href="#"><i class="ri-question-line"></i></a>
+                    <div class="errorBox" style="display: none;"></div>
+                    <input type="text" id="field1" name="field1" placeholder="Enter Gross Salary Income" required>
+                    <a class="exe" href="#"><i class="ri-error-warning-line"></i></a>
+                    <div class="errorBox2" style="display: none;"></div>
+                </div>
+                <div>
+                    <label for="field2">Enter Extra Income:</label>
+                    <a class="abc" href="#"><i class="ri-question-line"></i></a>
+                    <div class="errorBox" style="display: none;"></div>
+                    <input type="text" id="field2" name="field2" placeholder="Enter Extra Income" required>
+                    <a class="exe1" href="#"><i class="ri-error-warning-line"></i></a>
+                    <div class="errorBox3" style="display: none;"></div>
+                </div>
+                <div>
+                    <label for="field3">Enter Age Group:</label>
+                    <a class="abc" href="#"><i class="ri-question-line"></i></a>
+                    <div class="errorBox" style="display: none;"></div>
+                    <select id="field3" name="field3" required>
+                        <option value="" disabled selected hidden></option>
+                        <option value="<40">&lt;40</option>
+                        <option value=">=40&<60">&ge;40 &amp; &lt;60</option>
+                        <option value=">=60">&ge;60</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="field4">Enter Total Applicable Deductions:</label>
+                    <a class="abc" href="#"><i class="ri-question-line"></i></a>
+                    <div class="errorBox" style="display: none;"></div>
+                    <input type="text" id="field4" name="field4" placeholder="Enter Total Applicable Deductions" required>
+                    <a class="exe2" href="#"><i class="ri-error-warning-line"></i></a>
+                    <div class="errorBox4" style="display: none;"></div>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div class="custom-header">Tax Calculation Result</div>
+                <div id="modal-content"></div>
+                <button class="close">close</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

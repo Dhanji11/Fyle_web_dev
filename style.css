@@ -1,0 +1,203 @@
+.outer-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    height: 100vh; /* Adjust height as needed */
+}
+.container {
+    display: flex;
+     /* flex-direction: column; */
+     justify-content: center; 
+    align-items: center;
+    flex: hidden;
+    width: 300px;
+    height: 450px;
+    padding: 20px;
+    border: 2px solid #888;
+    border-radius: 10px;
+}
+
+select, input[type="text"], button[type="submit"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+button[type="submit"] {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+/* Add this CSS to style the modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    bottom: 60%;
+    top: 3%;
+    width: 80%;
+    height: 100%;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 2px solid #888;
+    width: 40%;
+    height: 50%;
+    border-radius: 5px;
+    text-align: center; /* Center align text */
+    position: relative; /* Position relative for absolute positioning of close button */
+}
+
+.close {
+    background-color: blue; /* Blue background color */
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px; /* Position close button at the bottom */
+    left: 50%; /* Center the close button horizontally */
+    transform: translateX(-50%); /* Center the close button horizontally */
+}
+
+.close:hover {
+    background-color: darkblue; /* Darker blue on hover */
+}
+
+.custom-header {
+    background-color: rgb(154, 154, 216);
+    color: white;
+    padding: 20px;
+}
+body {
+    overflow-y: hidden;
+}
+.abc{
+
+    padding: 30px 0;
+    text-decoration: none;
+    color: #000;
+
+
+}
+.errorBox {
+    display: inline-block;
+    background-color: #262a2a;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+
+}
+
+.errorBox2 {
+    display: inline-block;
+    background-color: #1d2020;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+
+}
+.exe {
+    text-decoration: none;
+    color: #000;
+    position: absolute;
+    left: 58%;
+    top: 30%;
+    display: none; /* Hide the error icon by default */
+}
+
+
+
+.errorBox3{
+    display: inline-block;
+    background-color: #1d2020;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+
+}
+.exe1 {
+    text-decoration: none;
+    color: #000;
+    position: absolute;
+    left: 58%;
+    top: 40%;
+    display: none; 
+
+}
+
+
+.errorBox4{
+    display: inline-block;
+    background-color: #1d2020;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+
+}
+.exe2 {
+    text-decoration: none;
+    color: #000;
+    position: absolute;
+    left: 58%;
+    top: 61%;
+    display: none; 
+
+}
+
+
+/* Styles for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%; 
+        height: auto; 
+    }
+
+    .modal-content {
+        width: 80%; 
+        height: 70%; 
+}
+
+/* Styles for screens between 600px and 900px */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .container {
+        width: 70%; 
+    }
+
+    .modal-content {
+        width: 60%; 
+        height: 60%; 
+    }
+}
+
+/* Styles for screens larger than 900px */
+@media only screen and (min-width: 901px) {
+    .container {
+        width: 500px; 
+        height: 450px; 
+    }
+
+    .modal-content {
+        width: 40%;
+        height: 50%; 
+    }
+}
+
+}
